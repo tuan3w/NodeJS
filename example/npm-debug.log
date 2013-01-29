@@ -1,0 +1,50 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'os' ]
+2 info using npm@1.2.2
+3 info using node@v0.8.18
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\xampp\htdocs\package.json
+6 verbose read json C:\xampp\htdocs\node_modules\ejs\package.json
+7 verbose read json C:\xampp\htdocs\package.json
+8 verbose cache add [ 'os', null ]
+9 verbose cache add name=undefined spec="os" args=["os",null]
+10 verbose parsed url { pathname: 'os', path: 'os', href: 'os' }
+11 silly lockFile 999a3419-os os
+12 verbose lock os C:\Users\newvalue\AppData\Roaming\npm-cache\999a3419-os.lock
+13 silly lockFile 999a3419-os os
+14 verbose addNamed [ 'os', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 46c56d42-os os@
+17 verbose lock os@ C:\Users\newvalue\AppData\Roaming\npm-cache\46c56d42-os.lock
+18 silly addNameRange { name: 'os', range: '', hasData: false }
+19 verbose url raw os
+20 verbose url resolving [ 'https://registry.npmjs.org/', './os' ]
+21 verbose url resolved https://registry.npmjs.org/os
+22 info trying registry request attempt 1 at 00:38:36
+23 http GET https://registry.npmjs.org/os
+24 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+25 info trying registry request attempt 2 at 00:38:59
+26 http GET https://registry.npmjs.org/os
+27 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+28 info trying registry request attempt 3 at 00:40:11
+29 http GET https://registry.npmjs.org/os
+30 silly lockFile 46c56d42-os os@
+31 error Error: getaddrinfo ENOTFOUND
+31 error     at errnoException (dns.js:37:11)
+31 error     at Object.onanswer [as oncomplete] (dns.js:124:16)
+32 error If you need help, you may report this log at:
+32 error     <http://github.com/isaacs/npm/issues>
+32 error or email it to:
+32 error     <npm-@googlegroups.com>
+33 error System Windows_NT 6.2.9200
+34 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "os"
+35 error cwd C:\xampp\htdocs\nodejs
+36 error node -v v0.8.18
+37 error npm -v 1.2.2
+38 error syscall getaddrinfo
+39 error code ENOTFOUND
+40 error errno ENOTFOUND
+41 verbose exit [ 1, true ]
