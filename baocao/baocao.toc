@@ -1,0 +1,13 @@
+\contentsline {chapter}{\numberline {1}L\IeC {\`\ohorn }i n\IeC {\'o}i \IeC {\dj }\IeC {\`\acircumflex }u}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}C\IeC {\^o}ng nh\IeC {\d \ecircumflex } NodeJS}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}M\IeC {\^o} h\IeC {\`\i }nh WebServer truy\IeC {\`\ecircumflex }n th\IeC {\'\ocircumflex }ng}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}NodeJS, m\IeC {\^o} h\IeC {\`\i }nh server m\IeC {\'\ohorn }i}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}M\IeC {\^o} h\IeC {\`\i }nh NodeJS}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}M\IeC {\d \ocircumflex }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} benchmark}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh h\IeC {\uhorn }\IeC {\'\ohorn }ng s\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n tr\IeC {\^e}n server}{6}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t v\IeC {\`a} qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Module trong NodeJS}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module l\IeC {\`a}m vi\IeC {\d \ecircumflex }c v\IeC {\`a}o ra}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module v\IeC {\`\ecircumflex } m\IeC {\d a}ng}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module c\IeC {\^o}ng c\IeC {\d u}}{8}{section.3.4}
+\contentsline {chapter}{\numberline {4}V\IeC {\'\i } d\IeC {\d u} minh h\IeC {\d o}a v\IeC {\'\ohorn }i NodeJS}{9}{chapter.4}
