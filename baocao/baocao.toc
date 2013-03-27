@@ -1,19 +1,47 @@
-\contentsline {chapter}{\numberline {1}L\IeC {\`\ohorn }i n\IeC {\'o}i \IeC {\dj }\IeC {\`\acircumflex }u}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}C\IeC {\^o}ng nh\IeC {\d \ecircumflex } NodeJS}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}M\IeC {\^o} h\IeC {\`\i }nh WebServer truy\IeC {\`\ecircumflex }n th\IeC {\'\ocircumflex }ng}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}NodeJS, m\IeC {\^o} h\IeC {\`\i }nh server m\IeC {\'\ohorn }i}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}M\IeC {\^o} h\IeC {\`\i }nh NodeJS}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}M\IeC {\d \ocircumflex }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} benchmark}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh h\IeC {\uhorn }\IeC {\'\ohorn }ng s\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n tr\IeC {\^e}n server}{6}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t v\IeC {\`a} qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{8}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}S\IeC {\h \uhorn } d\IeC {\d u}ng NodeJs}{9}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Qu\IeC {\h a}n l\IeC {\'y} module trong NodejS}{9}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}X\IeC {\^a}y d\IeC {\d \uhorn }ng v\IeC {\`a} s\IeC {\h \uhorn } d\IeC {\d u}ng c\IeC {\'a}c module}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Module trong NodeJS}{11}{section.3.4}
-\contentsline {section}{\numberline {3.5}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module l\IeC {\`a}m vi\IeC {\d \ecircumflex }c v\IeC {\`a}o ra}{11}{section.3.5}
-\contentsline {section}{\numberline {3.6}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module v\IeC {\`\ecircumflex } m\IeC {\d a}ng}{11}{section.3.6}
-\contentsline {section}{\numberline {3.7}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module c\IeC {\^o}ng c\IeC {\d u}}{11}{section.3.7}
-\contentsline {chapter}{\numberline {4}V\IeC {\'\i } d\IeC {\d u} minh h\IeC {\d o}a v\IeC {\'\ohorn }i NodeJS}{12}{chapter.4}
+\contentsline {chapter}{\numberline {1}C\IeC {\^o}ng ngh\IeC {\d \ecircumflex } NodeJS}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}M\IeC {\^o} h\IeC {\`\i }nh WebServer truy\IeC {\`\ecircumflex }n th\IeC {\'\ocircumflex }ng}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}NodeJS, m\IeC {\^o} h\IeC {\`\i }nh server m\IeC {\'\ohorn }i}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}M\IeC {\^o} h\IeC {\`\i }nh NodeJS}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}M\IeC {\d \ocircumflex }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} benchmark}{6}{subsection.1.2.2}
+\contentsline {subsubsection}{NodeJs vs Apache PHP benchmark}{6}{section*.3}
+\contentsline {subsection}{\numberline {1.2.3}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh h\IeC {\uhorn }\IeC {\'\ohorn }ng s\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n tr\IeC {\^e}n server}{10}{subsection.1.2.3}
+\contentsline {chapter}{\numberline {2}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t v\IeC {\`a} qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{12}{chapter.2}
+\contentsline {section}{\numberline {2.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{12}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{12}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}S\IeC {\h \uhorn } d\IeC {\d u}ng NodeJs}{13}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{13}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Qu\IeC {\h a}n l\IeC {\'y} module trong NodejS}{13}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}X\IeC {\^a}y d\IeC {\d \uhorn }ng v\IeC {\`a} s\IeC {\h \uhorn } d\IeC {\d u}ng c\IeC {\'a}c module}{14}{section.2.3}
+\contentsline {chapter}{\numberline {3}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh c\IeC {\ohorn } b\IeC {\h a}n NodeJS}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module l\IeC {\`a}m vi\IeC {\d \ecircumflex }c v\IeC {\`a}o ra}{16}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Module fs}{16}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Module path}{17}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module v\IeC {\`\ecircumflex } m\IeC {\d a}ng}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}HTTP \& HTTPS}{17}{subsection.3.2.1}
+\contentsline {subsubsection}{http.Server}{18}{section*.6}
+\contentsline {subsection}{\numberline {3.2.2}L\IeC {\'\ohorn }p http.ServerRequest}{18}{subsection.3.2.2}
+\contentsline {subsubsection}{L\IeC {\'\ohorn }p http.serverResponse}{19}{section*.7}
+\contentsline {subsubsection}{http Client}{20}{section*.8}
+\contentsline {subsection}{\numberline {3.2.3}Net}{21}{subsection.3.2.3}
+\contentsline {subsubsection}{net.connect(options, [connectionListener])}{21}{section*.9}
+\contentsline {subsubsection}{net.createConnection(options, [connectionListener])}{21}{section*.10}
+\contentsline {subsubsection}{net.connect(options, [host], [connectionListener])}{22}{section*.11}
+\contentsline {subsubsection}{net.createConnection(options, [host], [connectionListener])}{22}{section*.12}
+\contentsline {subsubsection}{net.connect(path, [connectListener])}{22}{section*.13}
+\contentsline {subsubsection}{net.createConnection(path, [connectListener])}{22}{section*.14}
+\contentsline {subsection}{\numberline {3.2.4}URL \& QueryString}{22}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}DNS}{24}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } module c\IeC {\^o}ng c\IeC {\d u}}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Console}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Util}{24}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Event Emitter}{25}{subsection.3.3.3}
+\contentsline {subsubsection}{emitter.addListener(event, listener)}{25}{section*.15}
+\contentsline {subsubsection}{emitter.on(event, listener)}{25}{section*.16}
+\contentsline {subsubsection}{emitter.once(event, listener)}{25}{section*.17}
+\contentsline {subsubsection}{emitter.removeListeners(event, listener)}{25}{section*.18}
+\contentsline {subsubsection}{emitter.removeAllListener([event])}{25}{section*.19}
+\contentsline {subsubsection}{T\IeC {\d a}o m\IeC {\d \ocircumflex }t Event Emitter}{26}{section*.20}
+\contentsline {subsection}{\numberline {3.3.4}Buffer}{26}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}V\IeC {\'\i } d\IeC {\d u} minh h\IeC {\d o}a v\IeC {\'\ohorn }i NodeJS}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Module Server}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Module Client}{31}{section.4.2}
