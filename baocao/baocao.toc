@@ -1,10 +1,11 @@
 \contentsline {chapter}{\numberline {1}C\IeC {\^o}ng ngh\IeC {\d \ecircumflex } NodeJS}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}M\IeC {\^o} h\IeC {\`\i }nh WebServer truy\IeC {\`\ecircumflex }n th\IeC {\'\ocircumflex }ng}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}NodeJS, m\IeC {\^o} h\IeC {\`\i }nh server m\IeC {\'\ohorn }i}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}M\IeC {\^o} h\IeC {\`\i }nh NodeJS}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}M\IeC {\d \ocircumflex }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} benchmark}{6}{subsection.1.2.2}
-\contentsline {subsubsection}{NodeJs vs Apache PHP benchmark}{6}{section*.3}
-\contentsline {subsection}{\numberline {1.2.3}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh h\IeC {\uhorn }\IeC {\'\ohorn }ng s\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n tr\IeC {\^e}n server}{10}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.1}C\IeC {\'a}c m\IeC {\^o} h\IeC {\`\i }nh Server}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}M\IeC {\^o} h\IeC {\`\i }nh Synchronous IO Server}{4}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}M\IeC {\^o} h\IeC {\`\i }nh Asynchronous IO Server}{5}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u NodeJS}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}M\IeC {\d \ocircumflex }t k\IeC {\'\ecircumflex }t qu\IeC {\h a} benchmark}{6}{subsection.1.2.1}
+\contentsline {subsubsection}{NodeJs vs Apache PHP benchmark}{7}{section*.3}
+\contentsline {subsection}{\numberline {1.2.2}L\IeC {\d \acircumflex }p tr\IeC {\`\i }nh h\IeC {\uhorn }\IeC {\'\ohorn }ng s\IeC {\d \uhorn } ki\IeC {\d \ecircumflex }n tr\IeC {\^e}n server}{10}{subsection.1.2.2}
 \contentsline {chapter}{\numberline {2}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t v\IeC {\`a} qu\IeC {\h a}n l\IeC {\'y} module trong NodeJS}{12}{chapter.2}
 \contentsline {section}{\numberline {2.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{12}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t NodeJS}{12}{subsection.2.1.1}

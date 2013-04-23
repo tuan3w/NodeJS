@@ -1,34 +1,41 @@
 ﻿\chapter{Công nghệ NodeJS}
 \label{Công nghệ NodeJS}
 
-\section{Mô hình WebServer truyền thống}
-    Trước hết ta tìm hiểu hoạt động của server.  Server truyền thống hoạt động theo cơ chế \texttt{synchronize IO}. Khi client gửi đến server một yêu cầu, server sẽ dựa trên url yêu cầu để tìm tài nguyên tương ứng. Server sẽ đợi vào ra dữ liệu.Tùy vào tài nguyên đó, server có thể gọi một chương trình khác để tiền xử lý (ví dụ php) và trả lại kết quả cho client. Để đáp ứng được yêu cầu cho nhiều client, server sẽ sử dụng thread để quản lý mỗi yêu cầu của client. Để tăng cường hiệu quả sử dụng thread, các server thường sử dụng cơ chế spool thread. Mô hình này có thể mô hình bởi hình vẽ dưới đây. \\
+\section{Các mô hình Server}
+    Trước hết ta tìm hiểu hoạt động của server. Có nhiều cách phân loại server đựa trên các đặc điểm khác nhau. Nhưng phổ biến nhất vẫn là theo đặc điểm vào ra của Server. Dựa trên đặc điểm này, ta có thể phân loại thành 2 mô hình server:
+	\begin{itemize}
+		\item Synchronous IO Server
+		\item Asynchronous IO Server
+	\end{itemize}
+\subsection{Mô hình Synchronous IO Server}
+	Điển hình cho loại server này là Apache. Khi client gửi đến server một yêu cầu, server sẽ dựa trên url yêu cầu để tìm tài nguyên tương ứng. Server sẽ đợi vào ra dữ liệu.Tùy vào tài nguyên đó, server có thể gọi một chương trình khác để tiền xử lý (ví dụ php) và trả lại kết quả cho client. Để đáp ứng được yêu cầu cho nhiều client, server sẽ sử dụng thread để quản lý mỗi yêu cầu của client. Để tăng cường hiệu quả sử dụng thread, các server thường sử dụng cơ chế spool thread. Mô hình này có thể mô hình bởi hình vẽ dưới đây. \\
 	\begin{figure}
         \centering
-        \includegraphics[scale=0.7]{io}
+        \includegraphics[scale=0.7]{nio}
         \rule{35em}{0.5pt}
-        \caption{Mô hình Server truyền thống}
-        \label{fig:io}
+        \caption{Mô hình synchronous IO Server}
+        \label{fig:nio}
     \end{figure}
-	Như có thể thấy trong hình \ref{fig:io}, khi có một yêu cầu được chấp nhận. Bộ phân phối yêu cầu sẽ tìm thread rảnh rỗi và phân phổi yêu cầu cho thread đó.
+	Như có thể thấy trong hình \ref{fig:nio}, khi có một yêu cầu được chấp nhận. Bộ phân phối yêu cầu sẽ tìm thread rảnh rỗi và phân phổi yêu cầu cho thread đó.
 	Tuy nhiên, mô hình này vẫn chứa những hạn chế nhất định. Đó là: \\
 	\begin{itemize}
-		\item Hạn chế của  việc sử dụng luồng: Việc sử dụng luồng có nhưng hạn chế nhất định. Trước hết, số lượng luồng tối đa có thể tạo ra bị giới hạn bởi khả năng của CPU. Tiếp đến là chi phí quản lý luồng cực kỳ tốn kém đặc biệt khi số lượng luồng lớn(khởi tạo luồng, lập lịch và chuyển đổi luồng, hủy bỏ luồng).
+		\item Hạn chế của  việc sử dụng luồng: Việc sử dụng luồng có nhưng hạn chế nhất định. Trước hết, số lượng luồng tối đa có thể tạo ra bị giới hạn bởi khả năng của CPU (vấn đề C10K). Tiếp đến là chi phí quản lý luồng cực kỳ tốn kém đặc biệt khi số lượng luồng lớn(khởi tạo luồng, lập lịch và chuyển đổi luồng, hủy bỏ luồng).
 		\item Lãng phí CPU do thời gian vào ra IO. Khi một yêu cầu từ client gửi tới, server sẽ phải đọc dữ liệu được định danh trong url, và chuyển nó tới bộ tiền xử lý. Trong thời gian vào ra, thread đó hoàn toàn không có tính toán. Do vậy hiệu xuất sử dụng CPU rất thấp.
 		\item Việc đồng bộ giữa các thread: Trong trường hợp  muốn đồng bộ giữa các thread, việc này cực kỳ khó.
 	\end{itemize}
 
-     \section{NodeJS, mô hình server mới}
-	\subsection{Mô hình NodeJS}
-	Khác với cơ chế truyền thống, NodeJS hoạt động theo cơ chế \texttt{asynchronous IO}. Trong NodeJS, có duy nhất một tiến trình hoạt động. Khi yêu cầu gửi từ client đến, server sẽ gửi yêu cầu cho bộ phận vào ra về yêu cầu đó và tiếp tục lắng nghe các yêu cầu khác từ client. Khi đã kết thúc vào ra, bộ phận vào ra gửi tín hiệu ngắt tới server. Server sẽ nhận dữ liệu này và tiếp tục xử lý. Như vậy, hiệu xuất sử dụng CPU đã tăng nên. Hơn nữa, trong trường hợp này, do chỉ có một tiến trình duy nhất, ta không còn gặp phải vấn đề về thread và đồng bộ giữa các Thread như trong mô hình cũ gặp phải nữa. Mô hình hoạt động của NodeJS được theer hiện trong hình dưới đây:
+	\subsection{Mô hình Asynchronous IO Server}
+	Tiêu biểu cho mô hình server này là Nginx. Hoạt động theo cơ chế \texttt{asynchronous IO}. Với các server này, có duy nhất một tiến trình hoạt động.Trong trường hợp muốn tận dụng đa lõi của server, tiến trình chính có thể được chia sẻ thông qua các tiến trình con. Khi yêu cầu gửi từ client đến, server sẽ gửi yêu cầu cho bộ phận vào ra về yêu cầu đó và tiếp tục lắng nghe các yêu cầu khác từ client. Khi đã kết thúc vào ra, bộ phận vào ra gửi tín hiệu ngắt tới server. Server sẽ nhận dữ liệu này và tiếp tục xử lý. Trong trường hợp này, việc vào ra không bị block như các trường hợp trên. Do vậy, hiệu xuất sử dụng CPU đã tăng nên. Hơn nữa, trong trường hợp này, do chỉ có một tiến trình duy nhất, ta không còn gặp phải vấn đề về thread và đồng bộ giữa các Thread như trong mô hình cũ gặp phải nữa. Mô hình này có thể được minh họa bởi hình dưới đây:
 	\begin{figure}
         \centering
         \includegraphics[scale=0.7]{io}
         \rule{35em}{0.5pt}
-        \caption{Mô hình hoạt động của NodeJS}
+        \caption{Mô hình Asynchronous IO Server}
         \label{fig:nio}
     \end{figure}
-	Theo cơ chế này, khi có ngắt xuất hiện, server sẽ tiếp tục thực hiện xử lý với dữ liệu được đọc. Vậy làm thế nào server có thể xác định được công việc cần phải làm? Giả sử đây là một công việc cần thực hiện của server:
+\section{Giới thiệu NodeJS}
+	NodeJS cũng là một server họat động theo cơ chế asynchronous IO. Nhưng điểm quan trọng NodeJS cũng là một ngôn ngữ lập trình phía server. Như đã trình bày ở trên, ta chỉ có một tiến trình duy nhất hoạt động. Để có thể lập trình được, ta phải trả lời 2 câu hỏi. Thứ nhất là làm thế nào để có thể xác định được công việc server phải làm khi có một ngắt IO gửi đến. Thứ 2 là giải quyết vấn đề ngữ cảnh khi lập trình.\\
+	Trước hết, ta cùng xem xét vấn đề đầu tiên.Giả sử đây là một công việc cần thực hiện của server:
 \begin{minted}{javascript}
 	var post = db.query('SELECT * FROM posts where id = 1');
 
@@ -51,9 +58,9 @@
 	doSomethingElse();
 \end{minted}
 	Cách tiếp cận này khá đơn giản và hợp lý. Ta sẽ truyền hàm cần thực thi như một tham số của truy vấn. Khi quá trình IO kết thúc, callback sẽ được gọi.
-	Vấn đề còn lại duy nhất là làm sao quản lý ngữ cảnh của hàm. Khi hàm trên được gọi, các biến môi trường đang ở trạng thái nào? Ryan Dahl , tác giả của NodeJS ban đầu viết sử dụng ngôn ngữ C, tuy nhiên do việc quản lý ngữ cảnh giữa các callback rất phức tạp, ông đã chuyển sang dùng ngôn ngữ Lua. Lua có cả các thư viện non IO blocking và I/O blocking có thể gây phức tạp cho các nhà lập trình vì vậ Lua không phải là một giải pháp hay. Sau đó, ông nghĩ tới javascript. Trong javascript, có một đặc trưng thú vị là closure function. Khi một hàm được gọi, trước hết bộ thông dịch sẽ tìm các biến cục bộ của hàm sẽ được tham chiếu. Nếu biến đó không tồn tại, bộ thông dịch tiếp tục tìm kiếm ra toàn cục. Ngữ cảnh của hàm được xác định khi hàm được khai báo. Để hiểu kỹ vấn đề này hơn, ta cùng xem ví dụ đơn giản sau:
 
 \begin{minted}{javascript}
+	Vấn đề còn lại duy nhất là làm sao quản lý ngữ cảnh của hàm. Khi hàm trên được gọi, các biến môi trường đang ở trạng thái nào? Ryan Dahl , tác giả của NodeJS ban đầu viết sử dụng ngôn ngữ C, tuy nhiên do việc quản lý ngữ cảnh giữa các callback rất phức tạp, ông đã chuyển sang dùng ngôn ngữ Lua. Lua có cả các thư viện non IO blocking và I/O blocking có thể gây phức tạp cho các nhà lập trình vì vậ Lua không phải là một giải pháp hay. Sau đó, ông nghĩ tới javascript. Trong javascript, có một đặc trưng thú vị là closure function. Khi một hàm được gọi, trước hết bộ thông dịch sẽ tìm các biến cục bộ của hàm sẽ được tham chiếu. Nếu biến đó không tồn tại, bộ thông dịch tiếp tục tìm kiếm ra toàn cục. Ngữ cảnh của hàm được xác định khi hàm được khai báo. Để hiểu kỹ vấn đề này hơn, ta cùng xem ví dụ đơn giản sau:
 var clickCount = 0;
 	
 document.getElementById('mybutton').onclick = function() {
